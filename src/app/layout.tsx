@@ -25,11 +25,23 @@ export const metadata: Metadata = {
     type: 'website',
     url: 'https://hugme.fashion',
   },
+  alternates: {
+    canonical: 'https://hugme.fashion',
+    languages: {
+      'en-IN': 'https://hugme.fashion',
+      'en-US': 'https://hugme.fashion/en-us',
+    },
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${cormorant.variable} ${outfit.variable}`}>
+      <head>
+        <link rel="alternate" hrefLang="en-in" href="https://hugme.fashion/" />
+        <link rel="alternate" hrefLang="en-us" href="https://hugme.fashion/en-us" />
+        <link rel="alternate" hrefLang="x-default" href="https://hugme.fashion/" />
+      </head>
       <body>
         <StoreProvider>{children}</StoreProvider>
       </body>

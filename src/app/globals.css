@@ -243,6 +243,11 @@ nav { flex: 1; display: flex; gap: 0; }
   overflow: hidden;
   display: flex;
   align-items: flex-end;
+  /* border:1px solid red; */
+  background-image: url("../../public/banner1.jpg");
+  background-repeat: no-repeat; 
+  background-size: cover;
+  background-position: center;
 }
 .hero-video-bg {
   position: absolute;

@@ -3,14 +3,14 @@ import Image from 'next/image';
 export default function Hero() {
   return (
     <section className="hero">
-      <Image
+      {/* <Image
         src="/banner1.jpg"
         alt="HugMe Fashion - Wear the Story"
         fill
         className="hero-image"
         priority
         quality={85}
-      />
+      /> */}
       <div className="hero-overlay" />
       <div className="hero-content">
         <div className="hero-tag">New Collection 2025</div>
